@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asham Preet Saini, PharmD — Drug Safety & Pharmacovigilance</title>
+<meta name="description" content="PharmD specialising in pharmacovigilance and drug safety: ICSR processing, MedDRA coding, causality assessment and safety narrative writing.">
+<meta name="theme-color" content="#f5f2ea">
+<link rel="canonical" href="https://maximo000.github.io/asham-portfolio/">
+<meta property="og:url" content="https://maximo000.github.io/asham-portfolio/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Asham Preet Saini, PharmD — Drug Safety & Pharmacovigilance">
+<meta property="og:description" content="ICSR processing, MedDRA coding, causality assessment and safety narrative writing, backed by clinical pharmacy training.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2312302f'/%3E%3Cpath d='M8 36h14l5 8 8-28 7 26 4-6h10' fill='none' stroke='%23c9682a' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f5f2ea; --card:#fbf9f4; --ink:#12302f; --teal:#0f5c57; --muted:#5d6b69;
+  --line:#d9d3c4; --accent:#c9682a;
+  --serif:"Fraunces",Georgia,serif; --sans:"Inter",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+  --ease:cubic-bezier(.2,.75,.2,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.label{font:500 11.5px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+h2{font:400 clamp(30px,4.4vw,48px)/1.1 var(--serif);letter-spacing:-.015em;margin:.35em 0 .5em}
+section{padding:112px 0;border-top:1px solid var(--line)}
+
+/* page progress (scroll-driven where supported) */
+.progress{position:fixed;inset:0 0 auto 0;height:3px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0);z-index:30}
+@supports (animation-timeline:scroll()){
+  .progress{animation:grow linear both;animation-timeline:scroll()}
+  @keyframes grow{to{transform:scaleX(1)}}
+}
+
+/* nav */
+nav{position:fixed;inset:0 0 auto 0;z-index:20;background:color-mix(in srgb,var(--paper) 86%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.mono-mark{font:500 20px var(--serif);text-decoration:none;letter-spacing:.02em}
+.mono-mark i{color:var(--accent);font-style:normal}
+nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0}
+nav ul a{font-size:14px;text-decoration:none;color:var(--muted);position:relative;padding:6px 0;transition:color .25s}
+nav ul a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--teal);transform:scaleX(0);transform-origin:0 50%;transition:transform .4s var(--ease)}
+nav ul a:hover{color:var(--ink)}
+nav ul a:hover::after{transform:scaleX(1)}
+
+/* hero */
+.hero{border:0;padding:150px 0 0;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .9fr;gap:56px;align-items:center}
+.status{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:99px;padding:7px 14px;background:var(--card)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 rgba(201,104,42,.5);animation:pulse 2.4s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(201,104,42,0)}100%{box-shadow:0 0 0 0 rgba(201,104,42,0)}}
+h1{font:400 clamp(46px,7.6vw,96px)/1 var(--serif);letter-spacing:-.025em;margin:26px 0 22px}
+h1 em{color:var(--teal)}
+.ln{display:block;overflow:hidden;padding-bottom:.14em;margin-bottom:-.14em}
+.ln>span{display:block;transform:translateY(110%);animation:rise 1.1s var(--ease) .15s forwards}
+.ln:nth-child(2)>span{animation-delay:.28s}
+@keyframes rise{to{transform:none}}
+.lede{font-size:18px;color:var(--muted);max-width:33em;margin:0 0 30px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 22px;border-radius:99px;border:1px solid var(--ink);text-decoration:none;font-weight:500;font-size:15px;transition:background .3s,color .3s,transform .3s var(--ease)}
+.btn:hover{transform:translateY(-2px)}
+.btn.solid{background:var(--ink);color:var(--paper)}
+.btn.solid:hover{background:var(--teal);border-color:var(--teal)}
+.btn:not(.solid):hover{background:var(--ink);color:var(--paper)}
+
+.form{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 30px 60px -40px rgba(18,48,47,.45)}
+.form header{display:flex;justify-content:space-between;padding:14px 20px;border-bottom:1px solid var(--line)}
+.form dl{margin:0;display:grid;grid-template-columns:1fr 1fr}
+.form dl div{padding:14px 20px;border-bottom:1px solid var(--line)}
+.form dl div:nth-child(odd){border-right:1px solid var(--line)}
+.form dl div.full{grid-column:1/-1;border-right:0}
+.form dl div:last-child{border-bottom:0}
+.form dd{margin:4px 0 0;font-weight:500}
+
+.signal{display:block;width:100%;height:120px;margin-top:56px}
+.signal path{fill:none;stroke:var(--teal);stroke-width:1.5;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2.6s var(--ease) .5s forwards}
+.signal circle{fill:var(--accent);opacity:0;animation:fade .6s 2s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fade{to{opacity:1}}
+
+/* highlight box */
+.box{border:1.5px solid var(--ink);border-radius:4px;display:grid;grid-template-columns:repeat(3,1fr);background:var(--card)}
+.box>div{padding:30px 28px}
+.box>div+div{border-left:1px solid var(--line)}
+.num{font:400 clamp(40px,5vw,60px)/1 var(--serif);color:var(--teal);font-variant-numeric:tabular-nums}
+.box p{margin:10px 0 0;color:var(--muted);font-size:15px}
+
+/* pipeline */
+.pipe{display:grid;grid-template-columns:260px 1fr;gap:64px;margin-top:48px}
+.rail{position:sticky;top:120px;align-self:start;list-style:none;margin:0;padding:0}
+.rail::before,.rail::after{content:"";position:absolute;left:5px;top:16px;bottom:16px;width:1px;background:var(--line)}
+.rail::after{background:var(--accent);width:2px;left:4.5px;transform:scaleY(var(--p,0));transform-origin:50% 0;transition:transform .7s var(--ease)}
+.rail a{display:block;position:relative;padding:5px 0 5px 30px;text-decoration:none;color:var(--muted);font:500 12px/1.9 var(--mono);letter-spacing:.12em;text-transform:uppercase;transition:color .4s,transform .4s var(--ease)}
+.rail a::before{content:"";position:absolute;left:0;top:50%;width:11px;height:11px;margin-top:-6px;border-radius:50%;background:var(--paper);border:1.5px solid var(--line);z-index:1;transition:background .4s,border-color .4s,transform .4s var(--ease)}
+.rail .on a{color:var(--ink);transform:translateX(4px)}
+.rail .on a::before,.rail .done a::before{background:var(--accent);border-color:var(--accent)}
+.rail .on a::before{transform:scale(1.35)}
+.stages{display:grid;gap:22px}
+.stage{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:34px 36px;transition:border-color .5s,box-shadow .5s,transform .8s var(--ease),opacity .8s var(--ease)}
+.stage.on{border-color:var(--teal);box-shadow:0 26px 50px -38px rgba(18,48,47,.55)}
+.stage h3{font:400 28px/1.2 var(--serif);margin:8px 0 10px}
+.stage p{margin:0;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.tag{font:500 11.5px var(--mono);letter-spacing:.06em;padding:6px 11px;border:1px solid var(--line);border-radius:99px;background:var(--paper);transition:border-color .3s,transform .3s var(--ease)}
+.tag:hover{border-color:var(--teal);transform:translateY(-2px)}
+
+/* two column blocks */
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:40px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:32px;transition:transform .8s var(--ease),opacity .8s var(--ease),border-color .4s}
+.panel:hover{border-color:var(--teal)}
+.panel h3{font:400 24px/1.25 var(--serif);margin:10px 0 12px}
+.panel p,.panel li{color:var(--muted)}
+.panel ul{margin:0;padding-left:18px}
+.panel li{margin:6px 0}
+.link{color:var(--teal);font-weight:500;text-underline-offset:4px}
+
+.btn.sm{padding:8px 16px;font-size:13.5px}
+.timeline{margin-top:36px;border-bottom:1px solid var(--line)}
+.row{display:grid;grid-template-columns:220px 1fr;gap:32px;padding:30px 0;border-top:1px solid var(--line)}
+.row .label{padding-top:8px}
+.row h3{font:400 26px/1.25 var(--serif);margin:0;transition:color .3s,transform .5s var(--ease)}
+.row:hover h3{color:var(--teal);transform:translateX(6px)}
+.row .org{margin:4px 0 10px;font-weight:500}
+.row p{margin:0;color:var(--muted);max-width:44em}
+.row p.org{color:var(--ink)}
+
+.also{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:14px;margin-top:28px}
+.also>div{padding:24px 28px}
+.also>div+div{border-left:1px solid var(--line)}
+.also p{margin:6px 0 0;color:var(--muted);font-size:15px}
+
+/* contact */
+.contact{text-align:center;padding-bottom:96px}
+.contact h2{font-size:clamp(36px,6vw,72px)}
+.contact .btns{justify-content:center}
+footer{border-top:1px solid var(--line);padding:26px 0;text-align:center}
+
+/* scroll reveal — only hides content when JS is running */
+.js [data-reveal]{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:calc(var(--i,0)*90ms)}
+.js [data-reveal].in{opacity:1;transform:none}
+
+@media (max-width:860px){
+  section{padding:76px 0}
+  nav ul{display:none}
+  .hero{padding-top:112px}
+  .hero .wrap,.pipe,.cols,.also,.row{grid-template-columns:1fr}
+  .row{gap:6px}
+  .box{grid-template-columns:1fr}
+  .box>div+div,.also>div+div{border-left:0;border-top:1px solid var(--line)}
+  .rail{display:none}
+  .stage{padding:26px 22px}
+  .pipe{gap:0}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js [data-reveal]{opacity:1;transform:none}
+  .ln>span{transform:none}
+  .signal path{stroke-dashoffset:0}
+  .signal circle{opacity:1}
+}
+</style>
+</head>
+<body>
+<div class="progress"></div>
+
+<nav>
+  <div class="wrap">
+    <a class="mono-mark" href="#top">APS<i>.</i></a>
+    <ul>
+      <li><a href="#work">Case workflow</a></li>
+      <li><a href="#clinical">Clinical</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#toolkit">Toolkit</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn sm" href="Asham-Preet-Saini-Resume.pdf" download>Résumé ↓</a>
+  </div>
+</nav>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="status label" data-reveal><span class="dot"></span>Open to opportunities</span>
+      <h1><span class="ln"><span>Asham Preet</span></span><span class="ln"><span>Saini, <em>PharmD</em></span></span></h1>
+      <p class="lede" data-reveal style="--i:4">Drug safety and pharmacovigilance professional. I turn raw adverse-event reports into clean, coded, medically sound safety cases — backed by clinical pharmacy training in a tertiary-care hospital.</p>
+      <div class="btns" data-reveal style="--i:5">
+        <a class="btn solid" href="#work">See how I work a case</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <div class="form" data-reveal style="--i:6">
+      <header><span class="label">Individual case summary</span><span class="label">APS-2026</span></header>
+      <dl>
+        <div><dt class="label">Qualification</dt><dd>Doctor of Pharmacy</dd></div>
+        <div><dt class="label">Speciality</dt><dd>Pharmacovigilance</dd></div>
+        <div><dt class="label">Location</dt><dd>Bay Area, California</dd></div>
+        <div><dt class="label">Work status</dt><dd>U.S. authorized</dd></div>
+        <div class="full"><dt class="label">Safety systems</dt><dd>Oracle Argus Safety · Veeva Vault Safety · MedDRA</dd></div>
+        <div class="full"><dt class="label">Languages</dt><dd>English · Hindi · Punjabi</dd></div>
+      </dl>
+    </div>
+  </div>
+  <svg class="signal" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+    <path pathLength="1" d="M0 80 H330 l14 -8 14 8 h70 l10 14 16 -84 16 96 10 -26 h120 l16 -12 16 12 H1200"/>
+    <circle cx="454" cy="10" r="5"/>
+  </svg>
+</section>
+
+<section style="border:0;padding:24px 0 112px">
+  <div class="wrap">
+    <div class="box" data-reveal>
+      <div><div class="num"><span data-count="120">120</span>+</div><p>ICSRs processed and evaluated every month</p></div>
+      <div><div class="num">EMA · MHRA</div><p>Regulatory sources assessed alongside literature</p></div>
+      <div><div class="num"><span data-count="6">6</span> yrs</div><p>PharmD training, with a peer-reviewed publication</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <span class="label" data-reveal>Parexel International · Drug Safety Associate · 2025 – 2026</span>
+    <h2 data-reveal>The life of a safety case,<br>and my part in every stage.</h2>
+    <p class="lede" data-reveal>On pharmacovigilance projects for Sanofi, I handled cases end to end in compliance with global regulatory requirements.</p>
+
+    <div class="pipe">
+      <ol class="rail">
+        <li><a href="#s1">01 Intake</a></li>
+        <li><a href="#s2">02 Triage</a></li>
+        <li><a href="#s3">03 Coding</a></li>
+        <li><a href="#s4">04 Assessment</a></li>
+        <li><a href="#s5">05 Narrative</a></li>
+        <li><a href="#s6">06 Quality review</a></li>
+      </ol>
+      <div class="stages">
+        <article class="stage" id="s1" data-reveal>
+          <span class="label">Stage 01</span><h3>Intake &amp; literature surveillance</h3>
+          <p>Identified reportable adverse events from published literature and conference abstracts, and received cases from spontaneous and regulatory sources.</p>
+          <div class="tags"><span class="tag">PubMed</span><span class="tag">Embase</span><span class="tag">Conference abstracts</span></div>
+        </article>
+        <article class="stage" id="s2" data-reveal>
+          <span class="label">Stage 02</span><h3>Triage</h3>
+          <p>Triaged incoming safety reports to assess validity and reporting priority, so the most serious cases moved first.</p>
+          <div class="tags"><span class="tag">Case validity</span><span class="tag">Reporting priority</span></div>
+        </article>
+        <article class="stage" id="s3" data-reveal>
+          <span class="label">Stage 03</span><h3>MedDRA coding</h3>
+          <p>Coded serious and non-serious adverse events, indications and medical history for accurate, compliant safety data.</p>
+          <div class="tags"><span class="tag">MedDRA</span><span class="tag">SAEs &amp; AEs</span><span class="tag">Medical history</span></div>
+        </article>
+        <article class="stage" id="s4" data-reveal>
+          <span class="label">Stage 04</span><h3>Medical assessment</h3>
+          <p>Applied clinical knowledge from PharmD training to evaluate the causality, seriousness and expectedness of adverse drug reactions.</p>
+          <div class="tags"><span class="tag">Causality</span><span class="tag">Seriousness</span><span class="tag">Expectedness</span></div>
+        </article>
+        <article class="stage" id="s5" data-reveal>
+          <span class="label">Stage 05</span><h3>Safety narrative</h3>
+          <p>Authored clear, concise and medically cohesive case narratives summarising each adverse event for medical review.</p>
+          <div class="tags"><span class="tag">Narrative writing</span><span class="tag">Medical writing</span></div>
+        </article>
+        <article class="stage" id="s6" data-reveal>
+          <span class="label">Stage 06</span><h3>Validation &amp; quality review</h3>
+          <p>Validated cases and reviewed quality in the Argus Safety database, keeping confidential patient and safety information protected throughout.</p>
+          <div class="tags"><span class="tag">Oracle Argus Safety</span><span class="tag">Case validation</span><span class="tag">Data privacy</span></div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="clinical">
+  <div class="wrap">
+    <span class="label" data-reveal>Livasa Hospital, Mohali · Clinical Pharmacist Intern · 2024 – 2025</span>
+    <h2 data-reveal>A clinical foundation,<br>built at the bedside.</h2>
+    <div class="cols">
+      <div class="panel" data-reveal><span class="label">Ward rounds</span><h3>Part of the care team</h3><p>Joined multidisciplinary rounds with physicians across departments, reviewing medication regimens and monitoring patient outcomes.</p></div>
+      <div class="panel" data-reveal style="--i:1"><span class="label">Stewardship</span><h3>Antimicrobial stewardship</h3><p>Supported stewardship initiatives through therapy review — the same question that drives my research.</p></div>
+      <div class="panel" data-reveal><span class="label">Documentation</span><h3>Accurate clinical records</h3><p>Collected medication histories and kept clinical documentation and treatment plans coordinated and accurate.</p></div>
+      <div class="panel" data-reveal style="--i:1"><span class="label">Patients</span><h3>Patient-centred communication</h3><p>Worked directly with patients and caregivers to explain and support their treatment plans.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <span class="label" data-reveal>Experience</span>
+    <h2 data-reveal>The full timeline.</h2>
+    <div class="timeline">
+      <div class="row" data-reveal>
+        <span class="label">Jul 2026 – Present</span>
+        <div><h3>Quality Control Inspector</h3><p class="org">Flex · Milpitas, California</p>
+          <p>Quality-control inspection, defect identification and SOP-based verification of electronic components and assemblies, with accurate inspection records under ESD, contamination-control and cleanroom procedures.</p></div>
+      </div>
+      <div class="row" data-reveal>
+        <span class="label">Jul 2026 – Sep 2026</span>
+        <div><h3>Behavior Technician</h3><p class="org">Amergis Staffing · San Jose, California</p>
+          <p>One-on-one student support using individualised behavioural and educational strategies under professional supervision, with documented observations and close collaboration with teachers and school staff.</p></div>
+      </div>
+      <div class="row" data-reveal>
+        <span class="label">May 2025 – May 2026</span>
+        <div><h3>Drug Safety Associate / Patient Safety Associate</h3><p class="org">Parexel International · Mohali, India</p>
+          <p>End-to-end ICSR processing on pharmacovigilance projects for Sanofi: triage, MedDRA coding, medical assessment, narrative writing and quality review in Argus Safety. <a class="link" href="#work">See the case workflow</a></p></div>
+      </div>
+      <div class="row" data-reveal>
+        <span class="label">Jun 2024 – May 2025</span>
+        <div><h3>Clinical Pharmacist Intern</h3><p class="org">Livasa Hospital · Mohali, India</p>
+          <p>Multidisciplinary ward rounds, medication regimen review, antimicrobial stewardship and clinical documentation in a tertiary-care hospital. <a class="link" href="#clinical">See the clinical work</a></p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="wrap">
+    <span class="label" data-reveal>Research &amp; education</span>
+    <h2 data-reveal>Evidence, written down.</h2>
+    <div class="cols">
+      <div class="panel" data-reveal>
+        <span class="label">Publication · International Journal of Pharmaceutical Sciences</span>
+        <h3>Evaluation and management strategies for beta-lactam antibiotics induced hypersensitivity reactions: a comprehensive review</h3>
+        <a class="link" href="https://doi.org/10.5281/zenodo.15110977" target="_blank" rel="noopener">DOI 10.5281/zenodo.15110977 ↗</a>
+      </div>
+      <div class="panel" data-reveal style="--i:1">
+        <span class="label">Thesis · Chandigarh University</span>
+        <h3>Evaluation of antibiotics prescribing patterns in tertiary care hospitals</h3>
+        <ul>
+          <li>Observational study of prescribing trends, dosing, duration, route and polypharmacy</li>
+          <li>Assessed adherence to antimicrobial stewardship guidelines</li>
+        </ul>
+      </div>
+    </div>
+    <div class="also" data-reveal>
+      <div><span class="label">Education</span><p><strong>Doctor of Pharmacy (PharmD)</strong><br>Chandigarh University, Mohali · 2019 – 2025</p></div>
+      <div><span class="label">Certification</span><p><strong>AHA BLS Provider (CPR + AED)</strong><br>American Heart Association · July 2026</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="toolkit">
+  <div class="wrap">
+    <span class="label" data-reveal>Toolkit</span>
+    <h2 data-reveal>What I bring to a safety team.</h2>
+    <div class="cols">
+      <div class="panel" data-reveal><span class="label">Pharmacovigilance</span>
+        <div class="tags"><span class="tag">ICSR processing</span><span class="tag">Case intake &amp; triage</span><span class="tag">Case validation</span><span class="tag">Narrative writing</span><span class="tag">Literature surveillance</span><span class="tag">Causality assessment</span><span class="tag">Regulatory safety reporting</span></div></div>
+      <div class="panel" data-reveal style="--i:1"><span class="label">Clinical &amp; scientific</span>
+        <div class="tags"><span class="tag">MedDRA coding</span><span class="tag">Clinical data review</span><span class="tag">Medication reconciliation</span><span class="tag">Medication safety</span><span class="tag">Literature evaluation</span><span class="tag">Medical writing</span></div></div>
+    </div>
+    <div class="panel" data-reveal style="margin-top:28px"><span class="label">Systems &amp; tools</span>
+      <div class="tags"><span class="tag">Oracle Argus Safety</span><span class="tag">Veeva Vault Safety</span><span class="tag">PubMed</span><span class="tag">Embase</span><span class="tag">Microsoft Excel</span><span class="tag">PowerPoint</span></div></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <span class="label" data-reveal>Contact</span>
+    <h2 data-reveal>Let's talk about<br><em style="color:var(--teal)">patient safety.</em></h2>
+    <div class="btns" data-reveal>
+      <a class="btn solid" href="mailto:sainiashampreet97@gmail.com">Email me</a>
+      <a class="btn" href="https://www.linkedin.com/in/dr-asham-preet-saini-8287651ba" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn" href="Asham-Preet-Saini-Resume.pdf" download>Download résumé ↓</a>
+    </div>
+  </div>
+</section>
+<footer><span class="label">Asham Preet Saini, PharmD · Milpitas, California</span></footer>
+
+<script>
+const $$ = s => [...document.querySelectorAll(s)];
+
+// reveal on scroll, once
+const reveal = new IntersectionObserver(entries => entries.forEach(e => {
+  if (!e.isIntersecting) return;
+  e.target.classList.add('in');
+  reveal.unobserve(e.target);
+  e.target.querySelectorAll('[data-count]').forEach(countUp);
+}), { threshold: .15 });
+$$('[data-reveal]').forEach(el => reveal.observe(el));
+
+function countUp(el) {
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const end = +el.dataset.count, t0 = performance.now();
+  (function tick(t) {
+    const p = Math.min((t - t0) / 1400, 1);
+    el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3)));
+    if (p < 1) requestAnimationFrame(tick);
+  })(t0);
+}
+
+// pipeline: the stage crossing the middle of the viewport is the active one
+const stages = $$('.stage'), steps = $$('.rail li'), rail = document.querySelector('.rail');
+const active = new IntersectionObserver(entries => entries.forEach(e => {
+  if (!e.isIntersecting) return;
+  const i = stages.indexOf(e.target);
+  stages.forEach((s, n) => s.classList.toggle('on', n === i));
+  steps.forEach((s, n) => { s.classList.toggle('on', n === i); s.classList.toggle('done', n < i); });
+  rail.style.setProperty('--p', i / (stages.length - 1));
+}), { rootMargin: '-45% 0px -45% 0px' });
+stages.forEach(s => active.observe(s));
+</script>
+</body>
+</html>
